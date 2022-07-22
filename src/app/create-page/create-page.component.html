@@ -1,0 +1,58 @@
+<h1 class="heading">Create Blogs</h1>
+
+<div class="createPage">
+<form >
+    <div class="form-control">
+        <label for="Title" class="TT">Title : </label>&nbsp;
+
+         <input type="text"
+          #name="ngModel" 
+          required minlength="1" 
+          maxlength="20" 
+         name="Title" 
+         class="form-control" 
+         [(ngModel)]="Title"
+         #title>
+  
+       <div *ngIf="name.invalid" class="alert">
+          <p *ngIf="name.errors?.['required']">Required field</p>
+           <p *ngIf="name.errors?.['minlength']">fill the title properly</p>
+       </div>
+    </div>
+    
+    <pre></pre>
+
+    <div class="form-control">
+    <label for="Description" class="DD">Description : </label><br>
+
+    <textarea #name1="ngModel" 
+    required minlength="10"
+    name="Description"
+    class="form-control"
+    rows="7" cols="34" 
+    [(ngModel)]="Description"
+    #description>
+    </textarea>
+
+    <div *ngIf="name1.invalid" class="alert">
+    <p *ngIf="name1.errors?.['required']">Required field</p>
+    <p *ngIf="name1.errors?.['minlength']">Required field </p></div>
+    <br><label class="note"></label>
+ </div>
+
+ <pre></pre>
+
+      <button ><a class="cancel" href="createpage">Cancel</a></button>
+
+    <button (click)="submit(title.value,description.value)" class="postbutton">Post</button>
+</form>
+
+</div>
+<div>
+    <!-- <app-home-page *ngFor="let blog of blogs; let i = index"
+  [blog]="blog"
+  [id]="i"></app-home-page>  -->
+  <!-- <app-show-blog></app-show-blog> -->
+</div>
+
+<!-- <router-outlet></router-outlet> -->

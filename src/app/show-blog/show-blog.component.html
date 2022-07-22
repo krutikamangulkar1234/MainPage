@@ -1,0 +1,12 @@
+<!-- <app-create-page></app-create-page> -->
+<!-- <app-home-page *ngFor="let blog of blogs; let i = "index"
+  [blog]="blog"
+  [id]="i"></app-home-page> -->
+
+
+<div *ngFor="let blog of blogs">
+<app-blog-item [blog]="blog" ></app-blog-item> 
+<!-- <app-blog-item [blog]="blog"></app-blog-item>  -->
+</div>
+<!-- <app-manage-item></app-manage-item> -->
+<!-- <router-outlet></router-outlet> -->

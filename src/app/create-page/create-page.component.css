@@ -1,0 +1,38 @@
+.heading
+{
+    text-align: center;
+   font-style: initial;
+}
+.createPage
+{ 
+   margin-left:25%;
+   margin-right: 25%;
+   height: 10cm;
+   width: 17cm;
+   border-style:groove;
+   border-color: rgb(42, 37, 49);
+   padding-top:1cm ;
+   padding-left:1cm;
+   padding-bottom: -2cm;
+   background-color: bisque;
+
+}
+.alert{
+    background-color: rgb(236, 28, 28);
+}
+.postbutton 
+{
+   margin-left: 30%;
+  
+}
+.cancel,.cancelbutton
+{
+    margin-left: 10%;
+    text-decoration: none;
+ 
+}
+.TT,.DD{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
